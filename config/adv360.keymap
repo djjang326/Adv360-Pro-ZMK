@@ -63,7 +63,7 @@
 &kp TAB    &kp Q      &kp W     &kp F           &kp P            &kp B   &kp LS(LCTRL)                                                                         &kp LS(LCTRL)     &kp J   &kp L         &kp U           &kp Y     &kp SEMI  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S           &kp T            &kp G   &kp LS(LEFT_ALT)  &kp LCTRL   &kp LEFT_ALT                  &kp LEFT_ALT   &kp RCTRL  &kp LS(LEFT_ALT)  &kp M   &kp N         &kp E           &kp I     &kp O     &kp APOS
 &kp LSHFT  &kp Z      &kp X     &kp C           &kp D            &kp V                                 &kp LS(LA(LC(LEFT_GUI)))      &kp F5                                      &kp K   &kp H         &kp COMMA       &kp DOT   &kp FSLH  &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp BACKSPACE     &kp DELETE  &kp LEFT_GUI                  &kp RIGHT_GUI  &kp ENTER  &kp SPACE                 &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT  &kp RBKT  &mo 3
+&mo 3      &kp GRAVE  &kp CAPS  &kp LEFT_ARROW  &kp RIGHT_ARROW          &kp BACKSPACE     &kp DELETE  &kp LEFT_GUI                  &kp RIGHT_GUI  &kp ENTER  &kp SPACE                 &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT  &kp RBKT  &mo 4
             >;
         };
 
@@ -89,11 +89,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6        &tog 2                                           &mo 5   &kp F7           &kp F8         &kp F9            &kp F10           &kp F11        &kp F12
-&trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET     &none                                            &none   &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans            &trans         &trans
-&trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ASTERISK  &none   &trans  &trans           &trans  &trans  &none   &kp H            &kp J          &kp K             &kp L             &kp SEMICOLON  &trans
-&trans  &trans  &trans  &trans            &trans             &trans                        &trans           &trans                  &trans           &trans         &none             &kp GREATER_THAN  &trans         &trans
-&trans  &trans  &trans  &trans            &trans                           &trans  &trans  &kp LG(TAB)      &trans  &trans  &trans                   &trans         &trans            &trans            &trans         &trans
+&kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6        &tog 2                                              &mo 5   &kp F7           &kp F8         &kp F9            &kp F10           &kp F11        &kp F12
+&trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET     &none                                               &none   &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans            &trans         &trans
+&trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ASTERISK  &none   &trans  &trans          &bt BT_CLR  &trans  &none   &kp H            &kp J          &kp K             &kp L             &kp SEMICOLON  &trans
+&trans  &trans  &trans  &trans            &trans             &trans                        &trans          &trans                      &trans           &trans         &none             &kp GREATER_THAN  &trans         &trans
+&trans  &trans  &trans  &trans            &trans                           &trans  &trans  &bt BT_NXT      &trans      &trans  &trans                   &trans         &trans            &trans            &trans         &trans
             >;
         };
 
