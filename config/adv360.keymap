@@ -49,6 +49,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        sk_custom: sk_custom {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_CUSTOM";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <10000>;
+        };
     };
 
     macros {
@@ -109,11 +117,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW          &kp RIGHT              &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans                &trans                 &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans                &trans                 &trans     &trans
+&trans  &trans                 &trans               &trans                   &trans               &trans  &trans                                      &trans  &trans    &trans    &trans        &trans                &trans                 &trans
+&trans  &trans                 &trans               &trans                   &trans               &trans  &trans                                      &trans  &trans    &trans    &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&trans  &sk_custom LEFT_SHIFT  &sk_custom LEFT_ALT  &sk_custom LEFT_CONTROL  &sk_custom LEFT_GUI  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT             &trans                 &trans
+&trans  &trans                 &trans               &trans                   &trans               &trans                  &trans      &trans                  &trans    &trans    &trans        &trans                &trans                 &trans
+&trans  &trans                 &trans               &trans                   &trans                       &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans                &trans                 &trans
             >;
         };
     };
