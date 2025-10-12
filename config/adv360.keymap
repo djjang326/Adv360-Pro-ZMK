@@ -38,13 +38,6 @@
             label = "CUT";
         };
 
-        chla: chla {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N2 &kp N0 &kp N2 &kp N0 &kp LS(D) &kp N2 &kp N &kp LS(Y) &kp AT &kp H &kp LS(Z) &kp X &kp N6 &kp R &kp DLLR>;
-            label = "CHLA";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -98,7 +91,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &kp F6        &tog 3                                              &mo 5   &kp F7           &kp F8         &kp F9            &kp F10           &kp F11        &kp F12
 &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp CARET     &none                                               &none   &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans            &trans         &trans
-&trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ASTERISK  &none   &chla   &trans          &bt BT_CLR  &trans  &none   &kp H            &kp J          &kp K             &kp L             &kp SEMICOLON  &trans
+&trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ASTERISK  &none   &trans  &trans          &bt BT_CLR  &trans  &none   &kp H            &kp J          &kp K             &kp L             &kp SEMICOLON  &trans
 &trans  &trans  &trans  &trans            &trans             &trans                        &trans          &trans                      &trans           &trans         &none             &kp GREATER_THAN  &trans         &trans
 &trans  &trans  &trans  &trans            &trans                           &trans  &trans  &bt BT_NXT      &trans      &trans  &trans                   &trans         &trans            &trans            &trans         &trans
             >;
