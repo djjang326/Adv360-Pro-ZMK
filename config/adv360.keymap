@@ -38,6 +38,13 @@
             label = "CUT";
         };
 
+        chla: chla {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N2 &kp N0 &kp LS(D) &kp N2 &kp N &kp LS(Y) &kp AT &kp H &kp LS(Z) &kp X &kp N6 &kp R &kp DLLR>;
+            label = "CHLA";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -109,7 +116,7 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &chla   &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans        &trans     &trans  &trans
