@@ -10,12 +10,6 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macrotest: macrotest {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp E &kp S &kp T>;
-            label = "MACROTEST";
-        };
 
         #endif
 
@@ -36,9 +30,6 @@
             #binding-cells = <1>;
             release-after-ms = <10000>;
         };
-    };
-
-    macros {
     };
 
     keymap {
